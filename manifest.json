@@ -1,0 +1,12 @@
+{
+	"manifest_version":2,
+	"name":"calculator",
+	"description":"This extension will do some basic mathemarical calculation",
+	"version":"1.0",
+
+	"browser_action":{
+		"default_icon":"calculator.png",
+		"default_popup":"popup.html"
+	},
+	"permissions":["activeTab"]
+}

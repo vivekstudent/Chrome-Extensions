@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript" src="back.js"></script>
+	</head>
+	<style>
+		*{
+			font-family:'Open Sans';
+			-webkit-transition:all ease 3000ms;
+		}
+		input, select{
+			padding:5px;
+			border:none;
+			border-bottom:1px solid pink;
+		}
+		.divs{
+			margin-top:10px;
+		}
+		#helpDiv{
+			color:green;
+			display:none;
+		}
+		#crossImg{
+			float:right;
+		}
+		#fourDiv{
+			clear:both;
+		}
+		.divsR{
+			float:left;
+		}
+		#selectDiv{
+			width:75%;
+		}
+		#acDiv{
+			width:25%;
+		}
+		#acButt{
+			background-color:white;
+			padding-left:15px;
+			padding-right:15px;
+		}
+	</style>
+	<body>
+		<div class="divs">
+		A very basic Calculator
+		<img id="helpImg" src="info.png">
+		</div>
+		<div id="helpDiv">
+			<div id="crossDiv">
+				<img src="cross.png" id="crossImg">
+				<br>
+				Click on the AC button to clear all the text boxes.<br>
+				Double click on the answer text box to initialise the first number with the value in it.
+			</div>
+		</div>
+		<div class="divs">
+			<input type="text" id="firstNumber" placeholder="Enter first number">
+		</div>
+		<div id="err1">
+		</div>
+		<div class="divs">
+			<input type="text" id="secondNumber" placeholder="Enter the second number">
+		</div>
+		<div id="err2">
+		</div>
+		<div class="divs">
+			<div class="divsR" id="selectDiv">
+					<select id="operator">
+						<option>Operator</option>
+						<option>+</option>
+						<option>-</option>
+						<option>*</option>
+						<option>/</option>
+						<option>%</option>
+					</select>
+				</div>
+			<div class="divsR" id="acDiv">
+				<input type="button" name="button" id="acButt" value="AC">
+			</div>
+		</div>
+		<div class="divs" id="fourDiv">
+			<input type="text" id="answer" placeholder="Answer">
+		</div>
+	</body>
+</html>
