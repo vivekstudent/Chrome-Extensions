@@ -86,3 +86,5 @@ document.addEventListener('DOMContentLoaded', function(){
 		answer.value="";
 	});
 });
+
+/*****File sis not well commented****/
